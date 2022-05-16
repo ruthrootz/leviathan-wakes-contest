@@ -48,5 +48,5 @@ if (ship not in SHIPS) | (faction not in FACTIONS):
     # if freehold
     # if ilus
 
-print("I hope you enjoyed your time in the Expanse universe! JOIN US for the readalong starting in July!")
+print("I hope you enjoyed your time in the Expanse universe! JOIN US for the readalong starting in July.")
 print("Media Death Cult: https://www.youtube.com/c/MovieDeathCult/featured")
