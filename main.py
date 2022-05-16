@@ -32,7 +32,7 @@ if (ship not in SHIPS) | (faction not in FACTIONS):
     # got drunk?
     # you put {ship} in manual and crash into an asteroid, idiot
     # if not pirate, you leave Ceres and get chased by pirates
-    # if pirate, you get caputred and tortured by Laconians
+    # if pirate, you get captured and tortured by Laconians
 # go to Ganymede?
     # get infected with the protomolecule
 
@@ -43,7 +43,7 @@ if (ship not in SHIPS) | (faction not in FACTIONS):
 # else, choose a ring gate
     # if infected, "The protomolecule gets the better of you. You dead."
     # if (opa | pirate | rocinante) & auberon, get a contract "You get a contract to smuggle supplies to Freehold. Your career in the Underground has begun!"
-    # else, "You infultrate and capture a group of Underground members."
+    # else, "You infiltrate and capture a group of Underground members."
     # if Laconia, "You get tortured by Laconians. Say hi to the other mutants in the pit!""
     # if freehold
     # if ilus
