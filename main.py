@@ -6,9 +6,7 @@ faction = input("Choose your faction {FACTIONS}:\n".format(FACTIONS = FACTIONS))
 ship = input("Choose your ship {SHIPS}:\n".format(SHIPS = SHIPS)).lower()
 
 if faction.lower() == 'earther':
-    print(
-        "We're the OG. That's why we're always right, even though our world is falling apart."
-    )
+    print("We're the OG. That's why we're always right, even though our world is falling apart.")
 elif faction == "belter":
     print("Owkwa beltalowda!")
 elif faction == "opa":
@@ -16,9 +14,7 @@ elif faction == "opa":
 elif faction == "mcrn":
     print("Donkey balls!")
 elif faction == "laconian":
-    print(
-        "Yay for being a powerful bad guy with strong but questionable values!"
-    )
+    print("Yay for being a powerful bad guy with strong but questionable values!")
 elif faction == "pirate":
     print("You'll still get dragged into this mess, pirate, even if you don't want to fight for a cause.")
 if (ship not in SHIPS) | (faction not in FACTIONS):
