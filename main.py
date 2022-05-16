@@ -4,12 +4,13 @@ GATES = ["ilus", "laconia", "freehold", "auberon"]
 
 faction = ""
 ship = ""
-keep_going = True
 merchandise = ""
+gate = ""
+keep_going = True
 
 def initialize():
     faction = input("Choose your faction {FACTIONS}:\n".format(FACTIONS = FACTIONS)).lower()
-    ship = input("Choose your ship {SHIPS}:\n".format(SHIPS = SHIPS)).lower()
+    ship = input("Choose your ship, captain {SHIPS}:\n".format(SHIPS = SHIPS)).lower()
     if faction.lower() == 'earther':
         print("We're the OG. Earth is the best, even though our world is falling apart.\n")
     elif faction == "belter":
@@ -53,15 +54,19 @@ def ganymede():
         return True
 
 def final_frontier():
-    print("Still alive? Lucky. The universe isn't usually this nice.")
-    print("You head to the ring gate. Time to explore the universe!")
-# choose a ring gate
-    # if infected, "The protomolecule gets the better of you. You dead."
-    # if (opa | pirate | rocinante) & auberon, get a contract "You get a contract to smuggle {merchandise} to Freehold. Your career in the Underground has begun!"
-    # else, "You infiltrate and capture a group of Underground members."
-    # if Laconia, "You get tortured by Laconians. Say hi to the other mutants in the pit!""
-    # if freehold
-    # if ilus
+    print("Still alive? Lucky. The universe isn't usually this nice.\n")
+    print("You head to the ring gate. Time to explore the universe!\n")
+    gate = input("Choose a gate {GATES}:\n".format(GATES = GATES)).lower()
+    if (faction == "opa" | faction == "pirate" | ship == "rocinante") & gate == "auberon":
+        print("You get a contract to smuggle {merchandise} to Freehold. Your career in the Underground has begun!\n".format(merchandise = merchandise))
+    elif gate == "auberon":
+        print("You infiltrate and capture a group of Underground members. Congrats!\n")
+    elif gate == "laconia":
+        print("You get tortured by Laconians. Say hi to the other mutants in the pit!\n")
+    elif gate == "freehold":
+        print("You get tortured by Laconians. Say hi to the other mutants in the pit!\n")
+    elif gate == "ilus":
+        print("You get tortured by Laconians. Say hi to the other mutants in the pit!\n")
 
 keep_going = initialize()
 if keep_going:
