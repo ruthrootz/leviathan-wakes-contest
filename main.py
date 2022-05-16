@@ -1,8 +1,6 @@
 FACTIONS = ["earther", "belter", "opa", "mcrn", "laconian", "pirate"]
 SHIPS =  ["rocinante", "tycho", "razorback", "donnager", "gathering storm"]
 GATES = ["ilus", "laconia", "freehold", "auberon"]
-
-gate = ""
 keep_going = True
 
 def initialize():
@@ -21,8 +19,10 @@ def initialize():
         print("Donkey balls!\n")
     elif faction == "laconian":
         print("Yay for being a powerful bad guy with strong but questionable values!\n")
-    elif faction == "pirate":
+    if faction == "pirate":
         merchandise = input("What do you smuggle, priate?\n")
+    else:
+        merchandise = "socks"
     if (ship not in SHIPS) | (faction not in FACTIONS):
         print("Your choices don't match the options... Try again.\n")
         return False
