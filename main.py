@@ -2,13 +2,13 @@ FACTIONS = ["earther", "belter", "opa", "mcrn", "laconian", "pirate"]
 SHIPS =  ["rocinante", "tycho", "razorback", "donnager", "gathering storm"]
 GATES = ["ilus", "laconia", "freehold", "auberon"]
 
-faction = ""
-ship = ""
-merchandise = ""
 gate = ""
 keep_going = True
 
 def initialize():
+    global faction
+    global ship
+    global merchandise
     faction = input("Choose your faction {FACTIONS}:\n".format(FACTIONS = FACTIONS)).lower()
     ship = input("Choose your ship, captain {SHIPS}:\n".format(SHIPS = SHIPS)).lower()
     if faction.lower() == 'earther':
@@ -39,7 +39,7 @@ def ceres():
         if ship == "rocinante":
             print("Your team wins the competition. Naomi is starting to think you're alright.\nTime to get back to your ship.\n")
         else:
-            print("You win the competition and make a few extra bucks!\nTime to get back to your ship.\n")
+            print("Your team wins the competition and you make a few extra bucks!\nTime to get back to your ship.\n")
         return True
     else:
         print("You go for a drink alone and get nice and plastered. Good for you.\nTime to get back to your ship.\n")
@@ -47,8 +47,8 @@ def ceres():
         return False
 
 def ganymede():
-    if input("Do you want to go to Ganymede? y/n")[0].lower() == "y":
-        print("Oops! You just got infected with the protomolecule. You're already in the process of dying a horrible death. So it goes.")
+    if input("Do you want to go to Ganymede? y/n\n")[0].lower() == "y":
+        print("Oops! You just got infected with the protomolecule. You're already in the process of dying a horrible death. So it goes.\n")
         return False
     else:
         return True
@@ -57,7 +57,7 @@ def final_frontier():
     print("Still alive? Lucky. The universe isn't usually this nice.\n")
     print("You head to the ring gate. Time to explore the universe!\n")
     gate = input("Choose a gate {GATES}:\n".format(GATES = GATES)).lower()
-    if (faction == "opa" | faction == "pirate" | ship == "rocinante") & gate == "auberon":
+    if ((faction == "opa") | (faction == "pirate") | (ship == "rocinante")) & (gate == "auberon"):
         print("You get a contract to smuggle {merchandise} to Freehold. Your career in the Underground has begun!\n".format(merchandise = merchandise))
     elif gate == "auberon":
         print("You infiltrate and capture a group of Underground members. Congrats!\n")
