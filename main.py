@@ -22,10 +22,12 @@ def initialize():
         merchandise = input("What do you smuggle, priate?")
     if (ship not in SHIPS) | (faction not in FACTIONS):
         print("Your choices don't match the options... Try again.")
-    if faction.lower():
-        
+ 
 def ceres()
-    # go to Ceres?
+    if input("Do you want to go to Ceres? y/n")[0].lower() == "n":
+        return true
+    if input("You meet Detective Miller. Want to go out for a drink with him? y/n")[0].lower() == "y":
+        
         # go for a drink with Miller?
             # get shot by drunk Miller
         # go for a drink alone?
@@ -54,10 +56,13 @@ def final_frontier()
     # if freehold
     # if ilus
 
-initialize()
-ceres()
-ganymede()
-final_frontier()
+keep_going = initialize()
+if keep_going:
+    keep_going = ceres()
+if keep_going:
+    keep_going = ganymede()
+if keep_going:
+    keep_going = final_frontier()
 
 print("I hope you enjoyed your time in the Expanse universe! JOIN US for the readalong starting in July.")
 print("Media Death Cult: https://www.youtube.com/c/MovieDeathCult/featured")
