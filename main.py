@@ -23,7 +23,8 @@ if (ship not in SHIPS) | (faction not in FACTIONS):
 # if pirate, choose what you smuggle
 # go to Ceres?
     # get shot by drunk Miller
-    # win a golgo competition, Naomi likes you now (if on Roci)
+    # win a golgo competition
+        # if on Roci, Naomi likes you now
     # get drunk
 # leave Ceres?
     # got drunk?
