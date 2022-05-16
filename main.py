@@ -22,22 +22,26 @@ if (ship not in SHIPS) | (faction not in FACTIONS):
 
 # if pirate, choose what you smuggle
 # go to Ceres?
-    # get shot by drunk Miller
+    # go for a drink with Miller?
+        # get shot by drunk Miller
+    # go for a drink alone?
+        # get drunk
     # win a golgo competition
         # if on Roci, Naomi likes you now
-    # get drunk
 # leave Ceres?
     # got drunk?
     # you put {ship} in manual and crash into an asteroid, idiot
     # if not pirate, you leave Ceres and get chased by pirates
     # if pirate, you get caputred and tortured by Laconians
 # go to Ganymede?
-    # get infected with the Protomolecule
+    # get infected with the protomolecule
 
 # "Still alive? Lucky. The universe isn't usually this nice."
 # "You head to the ring gate. Time to explore the universe!"
+
 # if drunk, enter random ring gate
 # else, choose a ring gate
+    # if infected, "The Protomolecule gets the better of you. You dead, bro."
     # if (opa | pirate | rocinante) & auberon, get a contract "You get a contract to smuggle supplies to Freehold. Your career in the Underground has begun!"
     # else, "You infultrate and capture a group of Underground members."
     # if Laconia, "You get tortured by Laconians. Say hi to the other mutants in the pit!""
