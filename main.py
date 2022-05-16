@@ -6,7 +6,7 @@ faction = input("Choose your faction {FACTIONS}:\n".format(FACTIONS = FACTIONS))
 ship = input("Choose your ship {SHIPS}:\n".format(SHIPS = SHIPS)).lower()
 
 if faction.lower() == 'earther':
-    print("We're the OG. That's why we're always right, even though our world is falling apart.")
+    print("We're the OG. Earth is the best, even though our world is falling apart.")
 elif faction == "belter":
     print("Owkwa beltalowda!")
 elif faction == "opa":
