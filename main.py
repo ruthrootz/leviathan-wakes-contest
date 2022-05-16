@@ -4,51 +4,58 @@ GATES = ["ilus", "laconia", "freehold", "auberon"]
 
 faction = ""
 ship = ""
+keep_going = True
+merchandise = ""
 
 def initialize():
     faction = input("Choose your faction {FACTIONS}:\n".format(FACTIONS = FACTIONS)).lower()
     ship = input("Choose your ship {SHIPS}:\n".format(SHIPS = SHIPS)).lower()
     if faction.lower() == 'earther':
-        print("We're the OG. Earth is the best, even though our world is falling apart.")
+        print("We're the OG. Earth is the best, even though our world is falling apart.\n")
     elif faction == "belter":
-        print("Owkwa beltalowda!")
+        print("Owkwa beltalowda!\n")
     elif faction == "opa":
-        print("Welcome, copeng. Let's get those inyalowda.")
+        print("Welcome, copeng. Let's get those inyalowda.\n")
     elif faction == "mcrn":
-        print("Donkey balls!")
+        print("Donkey balls!\n")
     elif faction == "laconian":
-        print("Yay for being a powerful bad guy with strong but questionable values!")
+        print("Yay for being a powerful bad guy with strong but questionable values!\n")
     elif faction == "pirate":
-        merchandise = input("What do you smuggle, priate?")
+        merchandise = input("What do you smuggle, priate?\n")
     if (ship not in SHIPS) | (faction not in FACTIONS):
-        print("Your choices don't match the options... Try again.")
+        print("Your choices don't match the options... Try again.\n")
+        return False
+    else:
+        return True
  
-def ceres()
-    if input("Do you want to go to Ceres? y/n")[0].lower() == "n":
-        return true
-    if input("You meet Detective Miller. Want to go out for a drink with him? y/n")[0].lower() == "y":
-        
-        # go for a drink with Miller?
-            # get shot by drunk Miller
-        # go for a drink alone?
-            # get drunk
-        # win a golgo competition
-            # if on Roci, Naomi likes you now
-    # leave Ceres?
-        # got drunk?
-        # you put {ship} in manual and crash into an asteroid, idiot
-        # if not pirate, you leave Ceres and get chased by pirates
-        # if pirate, you get captured and tortured by Laconians
+def ceres():
+    if input("Do you want to go to Ceres? y/n\n")[0].lower() == "n":
+        return True
+    if input("You meet Detective Miller. Want to go out for a drink with him? y/n\n")[0].lower() == "y":
+        print("You guys get drunk and then get into an argument. Miller shoots you. You die. The end.\n")
+        return False
+    elif input("You meet some golgo players. Want to join them for some games? y/n\n")[0].lower() == "y":
+        if ship == "rocinante":
+            print("Your team wins the competition. Naomi is starting to think you're alright.\nTime to get back to your ship.\n")
+        else:
+            print("You win the competition and make a few extra bucks!\nTime to get back to your ship.\n")
+        return True
+    else:
+        print("You go for a drink alone and get nice and plastered. Good for you.\nTime to get back to your ship.\n")
+        print("You accidentally put {ship} in manual and crash into an asteroid. You die. Idiot. The end.\n".format(ship = ship))
+        return False
 
-def ganymede()
-# go to Ganymede?
-    # get infected with the protomolecule
+def ganymede():
+    if input("Do you want to go to Ganymede? y/n")[0].lower() == "y":
+        print("Oops! You just got infected with the protomolecule. You're already in the process of dying a horrible death. So it goes.")
+        return False
+    else:
+        return True
 
-def final_frontier()
-# "Still alive? Lucky. The universe isn't usually this nice."
-# "You head to the ring gate. Time to explore the universe!"
-# if drunk, enter random ring gate
-# else, choose a ring gate
+def final_frontier():
+    print("Still alive? Lucky. The universe isn't usually this nice.")
+    print("You head to the ring gate. Time to explore the universe!")
+# choose a ring gate
     # if infected, "The protomolecule gets the better of you. You dead."
     # if (opa | pirate | rocinante) & auberon, get a contract "You get a contract to smuggle {merchandise} to Freehold. Your career in the Underground has begun!"
     # else, "You infiltrate and capture a group of Underground members."
