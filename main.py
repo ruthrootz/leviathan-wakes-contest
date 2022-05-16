@@ -7,6 +7,7 @@ def initialize():
     global faction
     global ship
     global merchandise
+    print("~~~ WELCOME TO THE EXPANSE UNIVERSE ~~~\n")
     faction = input("What are you? {FACTIONS}\n".format(FACTIONS = FACTIONS)).lower()
     ship = input("Choose your ship, captain {SHIPS}:\n".format(SHIPS = SHIPS)).lower()
     if faction.lower() == 'earther':
