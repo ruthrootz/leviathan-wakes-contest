@@ -8,7 +8,6 @@ ship = ""
 def initialize():
     faction = input("Choose your faction {FACTIONS}:\n".format(FACTIONS = FACTIONS)).lower()
     ship = input("Choose your ship {SHIPS}:\n".format(SHIPS = SHIPS)).lower()
-    
     if faction.lower() == 'earther':
         print("We're the OG. Earth is the best, even though our world is falling apart.")
     elif faction == "belter":
@@ -20,11 +19,11 @@ def initialize():
     elif faction == "laconian":
         print("Yay for being a powerful bad guy with strong but questionable values!")
     elif faction == "pirate":
-        print("You'll still get dragged into this mess, pirate, even if you don't want to fight for a cause.")
+        merchandise = input("What do you smuggle, priate?")
     if (ship not in SHIPS) | (faction not in FACTIONS):
         print("Your choices don't match the options... Try again.")
-# if pirate, choose what you smuggle
-
+    if faction.lower():
+        
 def ceres()
     # go to Ceres?
         # go for a drink with Miller?
@@ -49,7 +48,7 @@ def final_frontier()
 # if drunk, enter random ring gate
 # else, choose a ring gate
     # if infected, "The protomolecule gets the better of you. You dead."
-    # if (opa | pirate | rocinante) & auberon, get a contract "You get a contract to smuggle supplies to Freehold. Your career in the Underground has begun!"
+    # if (opa | pirate | rocinante) & auberon, get a contract "You get a contract to smuggle {merchandise} to Freehold. Your career in the Underground has begun!"
     # else, "You infiltrate and capture a group of Underground members."
     # if Laconia, "You get tortured by Laconians. Say hi to the other mutants in the pit!""
     # if freehold
