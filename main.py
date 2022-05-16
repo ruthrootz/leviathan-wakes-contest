@@ -41,9 +41,12 @@ if (ship not in SHIPS) | (faction not in FACTIONS):
 
 # if drunk, enter random ring gate
 # else, choose a ring gate
-    # if infected, "The Protomolecule gets the better of you. You dead, bro."
+    # if infected, "The protomolecule gets the better of you. You dead."
     # if (opa | pirate | rocinante) & auberon, get a contract "You get a contract to smuggle supplies to Freehold. Your career in the Underground has begun!"
     # else, "You infultrate and capture a group of Underground members."
     # if Laconia, "You get tortured by Laconians. Say hi to the other mutants in the pit!""
     # if freehold
     # if ilus
+
+print("I hope you enjoyed your time in the Expanse universe! JOIN US for the readalong starting in July!")
+print("Media Death Cult: https://www.youtube.com/c/MovieDeathCult/featured")
