@@ -62,11 +62,14 @@ def final_frontier():
     elif gate == "auberon":
         print("You infiltrate and capture a group of Underground members. Congrats!\n")
     elif gate == "laconia":
-        print("You get tortured by Laconians. Say hi to the other mutants in the pit!\n")
+        print("You get tortured by Laconians. Say hi to the other mutants in the Pen!\n")
     elif gate == "freehold":
-        print("You get tortured by Laconians. Say hi to the other mutants in the pit!\n")
+        if faction == "laconian":
+            print("You capture all the citizens and send them to the Pen for the sake of science. You monster.\n")
+        else:
+            print("Hopefully you're a libertarian. Otherwise you'll hate this place.\n")
     elif gate == "ilus":
-        print("You get tortured by Laconians. Say hi to the other mutants in the pit!\n")
+        print("Maybe you're a biology nerd? Not sure why else you'd come here.\n")
 
 keep_going = initialize()
 if keep_going:
